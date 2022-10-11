@@ -1,0 +1,51 @@
+linters-settings:
+    dupl:
+      threshold: 100
+    funlen:
+      lines: 100
+      statements: 50
+    goconst:
+      min-len: 2
+      min-occurrences: 2
+    gocyclo:
+      min-complexity: 15
+    golint:
+      min-confidence: 0
+    govet:
+      check-shadowing: true
+    lll:
+      line-length: 140
+    maligned:
+      suggest-new: true
+    misspell:
+      locale: US  
+    varnamelen:
+      min-name-length: 2
+
+linters:
+    enable-all: true
+    disable:
+      - maligned
+      - exhaustivestruct
+      - golint
+      - structcheck
+      - varcheck
+      - interfacer
+      - deadcode
+      - nosnakecase
+      - scopelint
+      - ifshort
+      - rowserrcheck
+      - sqlclosecheck
+      - wastedassign
+
+      - varnamelen
+      - wsl
+      - nonamedreturns
+      - nlreturn
+      - gomnd
+      - gochecknoglobals
+      - funlen
+      - gocognit
+      - cyclop
+      - gocyclo
