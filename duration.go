@@ -3,7 +3,6 @@ package iso8601
 import (
 	"errors"
 	"fmt"
-	"log"
 	"time"
 )
 
@@ -138,7 +137,6 @@ func ParseDuration(s string, opts ...Option) (time.Duration, error) {
 			if err != nil {
 				return 0, fmt.Errorf("iso8601: %w fraction %q", err, orig)
 			}
-			log.Println(u, f, scale, r)
 
 			v += r
 		}

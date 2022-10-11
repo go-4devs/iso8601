@@ -80,7 +80,7 @@ func TestParseDuration(t *testing.T) {
 		},
 		"zero time": {
 			parse:  "P3Y6M4DT12H30M17S",
-			expect: parseDuration(t, "30732h30m17s"),
+			expect: parseDuration(t, "30756h30m17s"),
 			opts: []iso8601.Option{
 				iso8601.From(func() time.Time {
 					return time.Time{}
